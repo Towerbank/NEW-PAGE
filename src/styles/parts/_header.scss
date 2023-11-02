@@ -1,0 +1,82 @@
+.header {
+  margin-bottom: 30px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 260px auto;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image--link {
+    margin-right: 30px;
+  }
+
+  &__name {
+    font-family: "Merriweather", sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: rgba(0, 95, 163, 1);
+
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+  }
+
+
+  &__contants {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__contact:not(:last-of-type) {
+    margin-right: 40px;
+  }
+
+
+  &__contact-link {
+    display: block;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  &__icon {
+    margin-right: 15px;
+    vertical-align: bottom;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: rgba(34, 34, 34, 1);
+
+  }
+}
