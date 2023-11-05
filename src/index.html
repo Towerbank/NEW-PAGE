@@ -4,54 +4,277 @@
 {% block content %}
 <main class="main">
   <section class="preview">
-    <div class="preview__slider">
-      <div class="preview__slide s1">
-        <img class="preview__img" src="img/promo.jpg" alt="">
-        <div class="preview__description">
-          <h2>Бухгалтерские услуги
-            в Санкт-Петербурге</h2>
-          <a href="#">Наша презинтация</a>
-        </div>
-      </div>
-      <div class="preview__slide">
-        <img class="preview__img" src="img/promo.jpg" alt="">
-        <div class="preview__description">
-          <h2>Бухгалтерские услуги
-            в Санкт-Петербурге</h2>
-          <a href="#">Наша презинтация</a>
-        </div>
-      </div>
-      <div class="preview__slide">
-        <img class="preview__img" src="img/promo.jpg" alt="">
-        <div class="preview__description">
-          <h2>Бухгалтерские услуги
-            в Санкт-Петербурге</h2>
-          <a href="#">Наша презинтация</a>
-        </div>
-      </div>
-      <div class="preview__slide">
-        <img class="preview__img" src="img/promo.jpg" alt="">
-        <div class="preview__description">
-          <h2>Бухгалтерские услуги
-            в Санкт-Петербурге</h2>
-          <a href="#">Наша презинтация</a>
-        </div>
-      </div>
+    <!-- <img class="preview__img" src="../img/promo.jpg" alt="проспект"> -->
+
+    <div class="preview__description">
+      <h1 class="preview__subtitle">Бухгалтерские услуги
+        в Санкт-Петербурге</h1>
+      <a href="#" class="preview__link">Наша презинтация</a>
+    </div>
+    <div class="preview__buttons">
       <div class="preview__dots">
-        <input type="radio" name="r" id="r1" checked>
-        <input type="radio" name="r" id="r2">
-        <input type="radio" name="r" id="r3">
-        <input type="radio" name="r" id="r4">
+        <input class="preview__radio" type="radio" name="r" id="r1">
         <label for="r1" class="preview__dot"></label>
+        <input class="preview__radio" type="radio" name="r" id="r2">
         <label for="r2" class="preview__dot"></label>
+        <input class="preview__radio" type="radio" name="r" id="r3" checked>
         <label for="r3" class="preview__dot"></label>
+        <input class="preview__radio" type="radio" name="r" id="r4">
         <label for="r4" class="preview__dot"></label>
       </div>
       <div class="preview__arrows">
-        <button></button>
-        <button></button>
+        <button class="preview__arrow"></button>
+        <button class="preview__arrow"></button>
+      </div>
+    </div>
+
+  </section>
+  <section class="services">
+    <div class="container">
+      <h2 id="service" class="services__title">Наши услуги</h2>
+      <p class="services__subtitle">Мы специализируемся</p>
+      <ul class="services__list">
+        <li class="services__item">
+          <a href="" class="services__link">
+            <h3 class="services__name">Бухгалтерское
+              обслуживание</h3>
+            <img src="img/our-services__item.jpg" alt="">
+          </a>
+        </li>
+        <li class="services__item">
+          <a href="" class="services__link">
+            <h3 class="services__name">Бухгалтерское
+              обслуживание</h3>
+            <img src="img/our-services__item.jpg" alt="">
+          </a>
+        </li>
+        <li class="services__item">
+          <a href="" class="services__link">
+            <h3 class="services__name">Бухгалтерское
+              обслуживание</h3>
+            <img src="img/our-services__item.jpg" alt="">
+          </a>
+        </li>
+        <li class="services__item">
+          <a href="" class="services__link">
+            <h3 class="services__name">Бухгалтерское
+              обслуживание</h3>
+            <img src="img/our-services__item.jpg" alt="">
+          </a>
+        </li>
+        <li class="services__item">
+          <a href="" class="services__link">
+            <h3 class="services__name">Бухгалтерское
+              обслуживание</h3>
+            <img src="img/our-services__item.jpg" alt="">
+          </a>
+        </li>
+        <li class="services__item">
+          <a href="" class="services__link">
+            <h3 class="services__name">Бухгалтерское
+              обслуживание</h3>
+            <img src="img/our-services__item.jpg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="case" class="about">
+    <div class="container about__wrapper">
+      <div class="about__description">
+        <h2 class="about__title">
+          О нас
+        </h2>
+        <p class="about__subtitle">
+          Компания
+          <span class="about__subtitle--blue">ИвановПром</span>
+        </p>
+        <p class="about__text">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+          "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+          коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только
+          успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+        </p>
+      </div>
+      <ul class="about__list">
+        <li class="about__item">
+          <span class="about__deals">90</span>
+          <p class="about__name">Завершено <br>
+            крупных сделок</p>
+          <a class="about__link" href="#">Все кейсы</a>
+        </li>
+        <li class="about__item">
+          <span class="about__deals">90</span>
+          <p class="about__name">Завершено <br>
+            крупных сделок</p>
+          <a class="about__link" href="#">Все кейсы</a>
+        </li>
+        <li class="about__item">
+          <span class="about__deals">90</span>
+          <p class="about__name">Завершено <br>
+            крупных сделок</p>
+          <a class="about__link" href="#">Все кейсы</a>
+        </li>
+        <li class="about__item">
+          <span class="about__deals">90</span>
+          <p class="about__name">Завершено <br>
+            крупных сделок</p>
+          <a class="about__link" href="#">Все кейсы</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="companeis" class="clients">
+    <div class="container">
+      <h2 class="clients__title">
+        Наши клиенты
+      </h2>
+      <p class="clients__subtitle">
+        С нами работают
+      </p>
+      <ul class="clients__list">
+        <li class="clients__item">
+          <a href="#" class="clients__link">
+            <img src="img/client.png" alt="Microsoft">
+          </a>
+        </li>
+        <li class="clients__item">
+          <a href="#" class="clients__link">
+            <img src="img/client.png" alt="Microsoft">
+          </a>
+        </li>
+        <li class="clients__item">
+          <a href="#" class="clients__link">
+            <img src="img/client.png" alt="Microsoft">
+          </a>
+        </li>
+        <li class="clients__item">
+          <a href="#" class="clients__link">
+            <img src="img/client.png" alt="Microsoft">
+          </a>
+        </li>
+      </ul>
+      <div class="clients__buttons">
+        <div class="clients__dots">
+          <input class="clients__radio" type="radio" name="r" id="cl1">
+          <label for="cl1" class="clients__dot"></label>
+          <input class="clients__radio" type="radio" name="r" id="cl2">
+          <label for="cl2" class="clients__dot"></label>
+          <input class="clients__radio" type="radio" name="r" id="cl3" checked>
+          <label for="cl3" class="clients__dot"></label>
+          <input class="clients__radio" type="radio" name="r" id="cl4">
+          <label for="cl4" class="clients__dot"></label>
+        </div>
+        <div class="clients__arrows">
+          <button class="clients__arrow"></button>
+          <button class="clients__arrow"></button>
+        </div>
       </div>
     </div>
   </section>
+
+  <section class="reviewers">
+    <div class="container">
+      <h2 class="reviewers__title">Отзывы</h2>
+      <p class="reviewers__subtitle">Ваши благодарности</p>
+      <div class="reviewers__reviewer">
+        <p class="reviewers__text">
+          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+          "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую
+          коллекцию
+          размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum - это текст-"рыба", часто
+          используемый в печати и вэб-дизайне.
+        </p>
+        <div class="reviewers__person">
+          <img class="reviewers__image" src="img/writer.png" alt="" width="80" height="80">
+          <div>
+            <p class="reviewers__name">Екатерина Иванова</p>
+            <p class="reviewers__status">Директор ООО “Раз-два”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviewers__buttons">
+      <div class="reviewers__dots">
+        <input class="reviewers__radio" type="radio" name="r" id="rev1">
+        <label for="rev1" class="reviewers__dot"></label>
+        <input class="reviewers__radio" type="radio" name="r" id="rev2">
+        <label for="rev2" class="reviewers__dot"></label>
+        <input class="reviewers__radio" type="radio" name="r" id="rev3" checked>
+        <label for="rev3" class="reviewers__dot"></label>
+        <input class="reviewers__radio" type="radio" name="r" id="rev4">
+        <label for="rev4" class="reviewers__dot"></label>
+      </div>
+      <div class="reviewers__arrows">
+        <button class="reviewers__arrow"></button>
+        <button class="reviewers__arrow"></button>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="call">
+    <div class="container call__wrapper">
+      <div id="contact" class="call__description">
+        <h2 class="call__title">
+          Связь с нами
+        </h2>
+        <p class="call__text">
+          У вас остались вопросы? Напишите нам - мы ответим <br> в ближайшее время!
+        </p>
+        <div class="call__callback">
+          <a href="" class="call__link call__tel">
+            <svg width="17.43" height="30" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="header__icon">
+              <path
+                d="M8.8373 0H1.1627C0.523313 0 0 0.522821 0 1.1627V16.0511C0 16.6909 0.523313 17.2142 1.1627 17.2142H8.8373C9.47669 17.2142 10 16.6919 10 16.0515V1.1627C10 0.522821 9.47669 0 8.8373 0ZM3.77238 0.838088H6.22762C6.30533 0.838088 6.36829 0.901043 6.36829 0.979245C6.36829 1.05695 6.30533 1.11991 6.22762 1.11991H3.77238C3.69467 1.11991 3.63171 1.05695 3.63171 0.979245C3.63171 0.901043 3.69467 0.838088 3.77238 0.838088ZM5 16.6329C4.67883 16.6329 4.41865 16.3727 4.41865 16.0511C4.41865 15.7294 4.67883 15.4697 5 15.4697C5.32117 15.4697 5.58135 15.7294 5.58135 16.0511C5.58135 16.3727 5.32117 16.6329 5 16.6329ZM9.19093 15.0625H0.809069V1.84389H9.19093V15.0625Z"
+                fill="white" />
+            </svg>
+            +7 (111) 222-33-44
+          </a>
+          <a href="" class="call__link call__mail">
+            <svg width="39.42" height="30" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="header__icon">
+              <path
+                d="M19.6115 0H2.73165C1.22485 0 0 1.22485 0 2.73165V14.2684C0 15.7752 1.22485 17 2.73165 17H19.6069C21.1137 17 22.3385 15.7752 22.3385 14.2684V2.73627C22.3431 1.22947 21.1183 0 19.6115 0ZM21.0952 14.2684C21.0952 15.0865 20.4296 15.752 19.6115 15.752H2.73165C1.91354 15.752 1.24796 15.0865 1.24796 14.2684V2.73627C1.24796 1.91816 1.91354 1.25258 2.73165 1.25258H19.6069C20.425 1.25258 21.0905 1.91816 21.0905 2.73627V14.2684H21.0952Z"
+                fill="white" />
+              <path
+                d="M14.088 8.35673L19.5513 3.45733C19.8055 3.22623 19.8287 2.83335 19.5975 2.57451C19.3664 2.3203 18.9736 2.29719 18.7147 2.52829L11.1807 9.29039L9.71093 7.97772C9.7063 7.9731 9.70168 7.96848 9.70168 7.96386C9.66933 7.9315 9.63697 7.90377 9.59999 7.87604L3.61903 2.52367C3.36019 2.29257 2.96731 2.31568 2.73621 2.57451C2.50511 2.83335 2.52822 3.22623 2.78705 3.45733L8.31506 8.39833L2.81016 13.552C2.56057 13.7877 2.54671 14.1806 2.78243 14.4348C2.90723 14.5642 3.07362 14.6335 3.24002 14.6335C3.39255 14.6335 3.54507 14.5781 3.66525 14.4671L9.25334 9.23955L10.7694 10.5938C10.8896 10.7001 11.0375 10.751 11.1854 10.751C11.3333 10.751 11.4858 10.6955 11.6014 10.5892L13.159 9.19333L18.7147 14.4717C18.8349 14.5873 18.9921 14.6428 19.1446 14.6428C19.311 14.6428 19.4728 14.5781 19.5975 14.4486C19.8333 14.199 19.824 13.8015 19.5744 13.5658L14.088 8.35673Z"
+                fill="white" />
+            </svg>
+            order@bu-one.ru
+          </a>
+        </div>
+      </div>
+      <form action="" method="post" class="call__form">
+        <div class="call__data">
+          <div class="call__data-name">
+            <label class="call__label" for="name">Имя</label>
+            <input class="call__input" type="text" name="name" id="name" placeholder="Иван">
+          </div>
+          <div class="call__data-lastname">
+            <label class="call__label" for="lastname">Фамилия</label>
+            <input class="call__input" type="text" name="lastname" id="lastname" placeholder="Иванов">
+          </div>
+        </div>
+        <div class="call__message">
+          <label class="call__label" for="message">Сообщение</label>
+          <textarea class="call__textarea" name="message" id="message" cols="20" rows="4"
+            placeholder="Ваше сообщение"></textarea>
+        </div>
+        <button type="submit" class="call__submit">Отправить сообщение</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <p>2019 (с) Все права защищены. БухОне.ру</p>
+      <p>Разработано: BuhOne</p>
+    </div>
+  </footer>
 </main>
 {% endblock %}
